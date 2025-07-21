@@ -29,7 +29,7 @@ La aplicación debe cumplir estos requisitos:
 - Los campos a mostrar serán: id, name, tagline, first_brewed, descrition, image
 - Debe estar construida en Arquitectura Hexagonal y DDD
 - La aplicación debe cumplir los estandares [PSR-2]
-- Se deben construir test unitarios sin atacar al API ( Mockear PunkAPI )
+- Se deben construir test unitarios sin atacar al API ( Mockear API )
 
 ## Extras
 
