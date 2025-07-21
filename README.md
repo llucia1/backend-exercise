@@ -11,12 +11,12 @@ aplicación de búsqueda y listado.
 
 ## Especificaciones
 
-Necesitamos construir un API de cervezas que combinen con cierto tipo de comida. Para obtener los datos de las cervezas se utilizará la API de [PunkApi].
+Necesitamos construir un API de libros. Para obtener los datos de los libros se utilizará la API de [gutendex](https://gutendex.com/).
 
 Las aplicacion debe tener estos dos endpoints:
 
-- Busqueda mediante una cadena de caracteres. (El campo a filtrar será **food**)
-- Mostrar los datos de una cerveza especifica según el id especificado.
+- Busqueda mediante una cadena de caracteres. ( Usar Lists of Books de Gutendex )
+- Mostrar los datos de un libro según el id especificado. (Usar Individual Books de gutendex)
 
 La solución del ejercicio debe ser enviada en un repositorio de GitHub, GitLab o Bitbucket con el historial completo de git.
 
@@ -35,11 +35,11 @@ La aplicación debe cumplir estos requisitos:
 
 Como mejora de la aplicación puedes implementar las siguientes funcionalidades.
 
-- Cachear las peticiones a PunkAPI temporalmente mediante FileSystem o Redis
+- Cachear las peticiones a Gutendex temporalmente mediante FileSystem o Redis
 - Construir documentacion del API mediante OpenAPI. Puedes usar [NelmioAPIBundle] u otra librería para ello.
 - Crear test funcionales mediante Behat 
 
 
-[PunkApi]: https://punkapi.com/documentation/v2
+[PunkApi]: https://punkapi.com/documentation/v2](https://gutendex.com/
 [NelmioAPIBundle]: https://symfony.com/bundles/NelmioApiDocBundle/current/index.html
 [PSR-2]: http://www.php-fig.org/psr/psr-2/
