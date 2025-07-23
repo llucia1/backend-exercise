@@ -26,7 +26,13 @@ La aplicación debe cumplir estos requisitos:
 
 - Usar Symfony como Framework
 - Debe ser un API REST y tener JSON como formato de salida.
-- Los campos a mostrar serán: id, name, tagline, first_brewed, descrition, image
+- Los campos a mostrar serán:
+```  
+  "id": <number of Project Gutenberg ID>,
+  "title": <string>,
+  "subjects": <array of strings>,
+  "authors": <array of Persons>,
+```
 - Debe estar construida en Arquitectura Hexagonal y DDD
 - La aplicación debe cumplir los estandares [PSR-2]
 - Se deben construir test unitarios sin atacar al API ( Mockear API )
