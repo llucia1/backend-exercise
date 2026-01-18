@@ -8,4 +8,5 @@ use Library\Books\Domain\Model\BookModel;
 interface IBookRepository
 {
     public function findOneById(int $id): ?BookModel;
+    public function search(string $query): array;
 }

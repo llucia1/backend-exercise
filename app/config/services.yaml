@@ -28,6 +28,10 @@ services:
             $bookRepository: '@Library\Books\Infrastructure\ThirdParty\GutendexBookRepository'
             $logger: '@logger'
 
+    Library\Books\Application\Service\SearchBooksService:
+        arguments:
+            $bookRepository: '@Library\Books\Infrastructure\ThirdParty\GutendexBookRepository'
+            $logger: '@logger'
 
     GuzzleHttp\ClientInterface:
         class: GuzzleHttp\Client

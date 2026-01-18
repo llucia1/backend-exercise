@@ -1,4 +1,4 @@
-api_health_check:
+api_books:
   resource:
     path: ../src/Books/Presentation/Rest
     namespace: Library\Books\Presentation\Rest
