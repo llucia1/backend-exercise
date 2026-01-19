@@ -23,15 +23,8 @@ services:
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
-    Library\Books\Application\Service\GetBookByIdService:
-        arguments:
-            $bookRepository: '@Library\Books\Infrastructure\ThirdParty\GutendexBookRepository'
-            $logger: '@logger'
+    Library\Books\Domain\Repository\IBookRepository: '@Library\Books\Infrastructure\Cache\CachedBookRepository'
 
-    Library\Books\Application\Service\SearchBooksService:
-        arguments:
-            $bookRepository: '@Library\Books\Infrastructure\ThirdParty\GutendexBookRepository'
-            $logger: '@logger'
 
     GuzzleHttp\ClientInterface:
         class: GuzzleHttp\Client

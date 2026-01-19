@@ -12,6 +12,7 @@
         "jms/serializer-bundle": "^5.5",
         "nelmio/api-doc-bundle": "^5.9",
         "nelmio/cors-bundle": "^2.6",
+        "predis/predis": "^3.3",
         "symfony/asset": "6.4.*",
         "symfony/cache": "6.4.*",
         "symfony/console": "6.4.*",
