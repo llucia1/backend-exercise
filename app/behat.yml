@@ -2,6 +2,13 @@ default:
   suites:
     books:
       paths:
-        - tests/Behat/features
+        - features
       contexts:
         - Library\Tests\Behat\Context\ApiContext
+
+  extensions:
+    FriendsOfBehat\SymfonyExtension:
+      kernel:
+        class: Library\Kernel
+        environment: test
+        debug: false
