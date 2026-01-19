@@ -1,0 +1,7 @@
+default:
+  suites:
+    books:
+      paths:
+        - tests/Behat/features
+      contexts:
+        - Library\Tests\Behat\Context\ApiContext

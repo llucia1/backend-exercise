@@ -1,0 +1,13 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Library\Tests\Behat\:
+        resource: '../tests/Behat/*'
+
+    Library\Tests\Behat\Fake\FakeBookRepository:
+        public: true
+
+    Library\Books\Domain\Repository\IBookRepository: '@Library\Tests\Behat\Fake\FakeBookRepository'
+

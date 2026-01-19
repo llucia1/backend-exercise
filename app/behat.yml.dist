@@ -1,0 +1,10 @@
+  suites:
+    default:
+      contexts:
+        - Library\Tests\Behat\Context\ApiContext
+  extensions:
+    FriendsOfBehat\SymfonyExtension:
+      kernel:
+        class: Library\Kernel
+        environment: test
+        debug: false
